@@ -2,17 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInput : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public class PlayerInput : MonoBehaviour, ICustomInput{
+    [SerializeField] Joystick _joyStick;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+
+    public Vector2 GetInput(){
+        return _joyStick.Direction;
     }
 }
