@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Plant", menuName = "Plants/Plant Scriptable")]
+[CreateAssetMenu(fileName = "PlantData", menuName = "Field/Plant Scriptable")]
 public class PlantScriptable : ScriptableObject {
     public GameObject Prefab;
     public float GrowthTime;
