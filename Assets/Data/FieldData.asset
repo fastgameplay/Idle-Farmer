@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MapSize: {x: 20, y: 10}
   CellSize: {x: 1, y: 1}
-  CellDistance: {x: 0.1, y: 1.05}
+  CellDistance: {x: 0.1, y: 1.1}
   PlantData: {fileID: 11400000, guid: 3926e4fb3e8638048a63221399154745, type: 2}
   CellPrefab: {fileID: 4498167022956470064, guid: c5f16571b0cfc3846a038a461f7bd1e2, type: 3}
   PickUpPrefab: {fileID: 39657298815539225, guid: 9e6ace4e7f767c244a0e2a10a002787d, type: 3}
