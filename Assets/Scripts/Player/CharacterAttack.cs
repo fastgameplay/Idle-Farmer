@@ -18,14 +18,13 @@ public class CharacterAttack : MonoBehaviour
         StartCoroutine(IEattack());
     }
     IEnumerator IEattack(){
-        Debug.Log("ATTACK Started");
         _attackArea.SetActive(true);
+        //Wait 5 frames C:
         yield return null;
         yield return null;
         yield return null;
         yield return null;
         yield return null;
         _attackArea.SetActive(false);
-        Debug.Log("ATTACK Ended");
     }
 }

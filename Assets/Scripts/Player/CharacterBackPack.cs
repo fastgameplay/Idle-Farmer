@@ -31,8 +31,7 @@ public class CharacterBackPack : MonoBehaviour
     int _quantity;
     void Start(){
         InitializeBackPack();
-        Quantity = 5;
-        Quantity = 120;
+
 
     }
     void InitializeBackPack(){

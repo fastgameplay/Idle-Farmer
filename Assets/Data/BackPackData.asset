@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prefab: {fileID: 377304422710033394, guid: b2558bc9be269a7489f57e7f58556da9, type: 3}
   Color: {r: 0.9764706, g: 0.7921569, b: 0.14117648, a: 1}
-  MaxSize: {x: 0.4, y: 3, z: 0.4}
+  MaxSize: {x: 0.4, y: 10, z: 0.4}
   MaxAmount: 40
