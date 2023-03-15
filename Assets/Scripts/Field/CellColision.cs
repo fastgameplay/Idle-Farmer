@@ -11,8 +11,9 @@ public class CellColision : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other){
-        Debug.Log("Triggered");
-        _fieldCell.Chop();
+        if(other.CompareTag("Chopper")){
+            _fieldCell.Chop();
+        }
     }
 
 }

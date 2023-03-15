@@ -9,4 +9,8 @@ public class PlayerInput : MonoBehaviour, ICustomInput{
     public Vector2 GetInput(){
         return _joyStick.Direction;
     }
+    public bool IsActive(){
+        if(_joyStick.Direction == Vector2.zero) return false;
+        return true;
+    }
 }

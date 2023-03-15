@@ -14,6 +14,9 @@ public class CharacterMovement : MonoBehaviour{
     }
 
     void Movement(){
+        if(_customInput.GetInput() == Vector2.zero){
+            
+        }
         Vector3 direction = Vector3.forward * _customInput.GetInput().y + Vector3.right *  _customInput.GetInput().x;
         transform.Translate(direction * _speed * Time.deltaTime);
     }
