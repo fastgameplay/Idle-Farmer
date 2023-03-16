@@ -380,6 +380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bpData: {fileID: 11400000, guid: 26787ec81d1b1ab49afbe6613ce3630f, type: 2}
   _backPackBase: {fileID: 359630712}
+  _bpText: {fileID: 1826863900}
 --- !u!4 &587681811
 Transform:
   m_ObjectHideFlags: 0
@@ -1488,6 +1489,7 @@ GameObject:
   - component: {fileID: 1826863897}
   - component: {fileID: 1826863899}
   - component: {fileID: 1826863898}
+  - component: {fileID: 1826863900}
   m_Layer: 5
   m_Name: BackPackText
   m_TagString: Untagged
@@ -1611,6 +1613,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826863896}
   m_CullTransparentMesh: 1
+--- !u!114 &1826863900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826863896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03bfbb3225a036a42b1edb8c5783dda2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1931382056
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Chopper
   - WheatPickable
+  - SellZone
   layers:
   - Default
   - TransparentFX

@@ -11,7 +11,7 @@ public class CharacterBackPack : MonoBehaviour
         set{
             if(value >= 0 && value <= _maxAmount){
                 SetSize(value);
-                _quantity = value;
+                _quantity = _bpText.Amount = value;
 
             }
         }
@@ -24,6 +24,8 @@ public class CharacterBackPack : MonoBehaviour
 
     [SerializeField] BackPackScriptable _bpData;
     [SerializeField] Transform _backPackBase;
+
+    [SerializeField] StorageText _bpText;
     GameObject _backPackObj;
 
     float _sliceHeight;
@@ -39,7 +41,7 @@ public class CharacterBackPack : MonoBehaviour
         _backPackObj.transform.localScale = _bpData.MaxSize;
         _backPackObj.GetComponent<MeshRenderer>().material.color = _bpData.Color;
         _sliceHeight = _bpData.MaxSize.y / _bpData.MaxAmount;
-        _maxAmount = _bpData.MaxAmount;
+        _maxAmount = _bpText.MaxAmount = _bpData.MaxAmount;
         
         Quantity = 0;
     }

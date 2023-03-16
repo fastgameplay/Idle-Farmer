@@ -15,11 +15,11 @@ public class StorageText : MonoBehaviour{
 
     void Awake(){
         _tmpText = GetComponent<TextMeshProUGUI>();
+        Amount = MaxAmount = 0;
     }
 
     void CheckValue(int value){
-        if(value < 0 || value > MaxAmount){
+        if(value < 0 || value > MaxAmount)
             throw new System.Exception("Value is out of range");
-        }
     }
 }
