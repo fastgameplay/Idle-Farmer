@@ -36,7 +36,9 @@ public class GoldText : MonoBehaviour
         currentAmount = _targetAmount = PlayerPrefs.GetInt("Gold",0);
     }
 
-
+    public void ShakeText(){
+        //TODO: anim.shake();
+    }
     IEnumerator IELerpAmount(int targetAmount)
     {
         float timeElapsed = 0f;
