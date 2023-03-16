@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc532c71e3cd95947a3f7820902b4dcf, type: 3}
   m_Name: FieldData
   m_EditorClassIdentifier: 
-  MapSize: {x: 20, y: 20}
+  MapSize: {x: 9, y: 9}
   CellSize: {x: 1, y: 1}
   CellDistance: {x: 0.1, y: 0.1}
   PlantData: {fileID: 11400000, guid: 3926e4fb3e8638048a63221399154745, type: 2}

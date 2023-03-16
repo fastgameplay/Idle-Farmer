@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c16b8a224c4818c48aa12c7f227062e7, type: 3}
   m_Name: PlantData
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 377304422710033394, guid: b2558bc9be269a7489f57e7f58556da9, type: 3}
+  Prefab: {fileID: 4752348118003151625, guid: 2a87cb06ac8f9374c8d8760a031ba487, type: 3}
   GrowthTime: 10
-  GrowthRange: {x: -0.45, y: 0.2}
+  GrowthRange: {x: -0.2, y: 0.4}
