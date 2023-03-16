@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PlantData
   m_EditorClassIdentifier: 
   Prefab: {fileID: 377304422710033394, guid: b2558bc9be269a7489f57e7f58556da9, type: 3}
-  GrowthTime: 5
-  GrowthRange: {x: -0.5, y: 0.2}
+  GrowthTime: 10
+  GrowthRange: {x: -0.45, y: 0.2}

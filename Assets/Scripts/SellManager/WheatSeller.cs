@@ -7,7 +7,6 @@ public class WheatSeller : MonoBehaviour
     [SerializeField] CharacterBackPack _backPack;
     [SerializeField] CoinThrower _coinThrower;
     public void StartSelling(){
-        Debug.Log("StartSell");
         StopSelling();
         StartCoroutine(IESellProcess());
     }
