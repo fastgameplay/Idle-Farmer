@@ -38,6 +38,7 @@ public class CharacterBackPack : MonoBehaviour
     }
     void InitializeBackPack(){
         _backPackObj = Instantiate(_bpData.Prefab, Vector3.zero, Quaternion.identity, _backPackBase);
+        _backPackObj.transform.localRotation = Quaternion.Euler(Vector3.zero);
         _backPackObj.transform.localScale = _bpData.MaxSize;
         _backPackObj.GetComponent<MeshRenderer>().material.color = _bpData.Color;
         _sliceHeight = _bpData.MaxSize.y / _bpData.MaxAmount;

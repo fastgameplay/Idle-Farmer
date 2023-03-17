@@ -33,7 +33,6 @@ public class CoinThrower : MonoBehaviour
         Destroy(coinRectTransform.gameObject);
 
         _goldText.Amount += _coinData.Price;
-        _goldText.ShakeText();
     }
 
 

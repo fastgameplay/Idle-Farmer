@@ -3,6 +3,7 @@ using UnityEngine;
 using TMPro;
 
 [RequireComponent(typeof(TextMeshProUGUI))]
+[RequireComponent(typeof(GoldTextAnim))]
 public class GoldText : MonoBehaviour
 {
     public int Amount{
@@ -15,6 +16,7 @@ public class GoldText : MonoBehaviour
             
             _targetAmount = value;
             StopAllCoroutines();
+            _anim.PlayShake();
             StartCoroutine(IELerpAmount(_targetAmount));
             //animate text from current to givven
         }
@@ -25,28 +27,27 @@ public class GoldText : MonoBehaviour
             _amount = value;
         }
     }
-
+    [SerializeField] float _secondsToFill;
     TextMeshProUGUI _tmpText;
+    GoldTextAnim _anim;
     int _amount;
     int _targetAmount;
 
     void Awake(){
         _tmpText = GetComponent<TextMeshProUGUI>();
+        _anim = GetComponent<GoldTextAnim>();
         //Load On Awake
         currentAmount = _targetAmount = PlayerPrefs.GetInt("Gold",0);
     }
 
-    public void ShakeText(){
-        //TODO: anim.shake();
-    }
     IEnumerator IELerpAmount(int targetAmount)
     {
         float timeElapsed = 0f;
         int startValue = _amount;
 
-        while (timeElapsed < 0.5f)
+        while (timeElapsed < _secondsToFill)
         {
-            currentAmount = Mathf.RoundToInt(Mathf.Lerp(startValue, targetAmount, timeElapsed / 0.5f));
+            currentAmount = Mathf.RoundToInt(Mathf.Lerp(startValue, targetAmount, timeElapsed / _secondsToFill));
             timeElapsed += Time.deltaTime;
             yield return null;
         }
