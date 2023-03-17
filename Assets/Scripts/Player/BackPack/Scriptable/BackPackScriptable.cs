@@ -6,4 +6,5 @@ public class BackPackScriptable : ScriptableObject{
     public Color Color;
     public Vector3 MaxSize;
     public int MaxAmount;
+    public FlyingBlock FlyingBlockPrefab;
 }

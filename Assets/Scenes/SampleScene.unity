@@ -423,7 +423,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359630711}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.2}
+  m_LocalPosition: {x: 0, y: 0, z: -0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5742672707213228584}
@@ -510,6 +510,7 @@ MonoBehaviour:
   _bpData: {fileID: 11400000, guid: 26787ec81d1b1ab49afbe6613ce3630f, type: 2}
   _backPackBase: {fileID: 359630712}
   _bpText: {fileID: 1826863900}
+  AmbarTransform: {fileID: 2697757895038885749}
 --- !u!4 &587681811
 Transform:
   m_ObjectHideFlags: 0
